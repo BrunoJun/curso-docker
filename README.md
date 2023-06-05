@@ -20,7 +20,34 @@ A seguir é apresentado uma breve explicação de cada projeto e os serviços e 
     * backend - node (8.1)
     * frontend: nginx (1.13)
     * banco de dados: mongoDB (3.4)
-* Projeto 2: AINDA NÃO REALIZADO
+* email-worker-compose: este projeto tem como simular um ambiente para envio de e-mails:
+    * db - postgres (9.6)
+    * frontend - nginx (1.13)
+    * app - python (3.6)
+    * queue - redis (3.2)
+    * worker - build do python (3.6)
+
+***
+
+## Execução
+
+Para executar o projeto "node-mongo-compose":
+* Abra o terminal.
+* Localize-se na pasta do projeto.
+* Digite o seguinte comando:
+```
+docker-compose up -d
+
+```
+
+Para executar o projeto "email-worker-compose":
+* Abra o terminal.
+* Localize-se na pasta do projeto.
+* Digite o seguinte comando:
+```
+docker-compose up -d --scale worker=3
+
+```
 
 ***
 
@@ -32,7 +59,7 @@ A seguir é apresentado uma breve explicação de cada projeto e os serviços e 
 
 ## Status
 
-:construction: **EM ANDAMENTO** :construction:
+:white_check_mark: **FINALIZADO** :white_check_mark:
 
 ***
 
