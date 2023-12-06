@@ -1,4 +1,4 @@
-<h1 align="center"> :whale: curso-docker :whale: </h1>
+<h1 align="center"> 🐳 curso-docker 🐳 </h1>
 
 ## Descrição
 
